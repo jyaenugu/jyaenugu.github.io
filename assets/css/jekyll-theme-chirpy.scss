@@ -1,0 +1,108 @@
+---
+---
+
+@use "main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}";
+
+/* append your custom style below */
+
+#sidebar {
+  background-color: #eab308 !important;
+}
+
+/* Title + tagline + menu text in gray */
+#sidebar .site-title,
+#sidebar .site-subtitle,
+#sidebar .nav-link {
+  color: #4a4a4a !important;
+}
+
+/* Tagline upright, not italic */
+#sidebar .site-subtitle {
+  font-style: normal !important;
+}
+
+/* Keep the menu icons white */
+#sidebar .nav-link i {
+  color: #fff !important;
+}
+
+/* The mode-toggle button is also a .nav-link — keep its icon visible (not white) */
+#sidebar #mode-toggle i {
+  color: #4a4a4a !important;
+}
+
+/* Remove the avatar circle entirely */
+#sidebar #avatar,
+#sidebar .profile-wrapper #avatar {
+  display: none !important;
+}
+
+/* Profile picture removed — pull the title/nav up a bit */
+#sidebar .profile-wrapper {
+  margin-top: 1.5rem !important;
+}
+
+/* ---- Dark mode: deeper gold + everything white for contrast ---- */
+html[data-mode="dark"] #sidebar {
+  background-color: #1e4d40 !important; /* dark money-green (₩10,000 note) */
+}
+
+html[data-mode="dark"] #sidebar .site-title,
+html[data-mode="dark"] #sidebar .site-subtitle,
+html[data-mode="dark"] #sidebar .nav-link,
+html[data-mode="dark"] #sidebar .nav-link i,
+html[data-mode="dark"] #sidebar #mode-toggle i,
+html[data-mode="dark"] #sidebar .sidebar-bottom a i {
+  color: #fff !important;
+}
+
+/* Right panel separator */
+#panel-wrapper {
+  border-left: 1px solid #d1d5db;
+}
+
+/* Editorial serif typeface (Lora for Latin, Noto Serif KR for Korean) */
+:root {
+  --bs-body-font-family: "Lora", "Noto Serif KR", Georgia, serif;
+}
+
+body {
+  font-family: "Lora", "Noto Serif KR", Georgia, serif;
+}
+
+/* Headings + titles use the same serif (Chirpy hardcodes Lato here) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+header .post-desc {
+  font-family: "Lora", "Noto Serif KR", Georgia, serif !important;
+}
+
+/* Unify the remaining UI bits too (Chirpy hardcodes Lato / Source Sans Pro).
+   Icon fonts (.fa*) and code/monospace are intentionally left untouched. */
+:root {
+  --bs-font-sans-serif: "Lora", "Noto Serif KR", Georgia, serif;
+}
+
+.pagination,
+#topbar-title,
+#toc-bar .label,
+#search-results a,
+#toc,
+#toc .toc-link,
+#toc-popup,
+#toc-popup .header .label,
+#toc-popup #toc-popup-content,
+#toc-solo-trigger .label,
+#notification .toast-body,
+#archives .date.day,
+kbd {
+  font-family: "Lora", "Noto Serif KR", Georgia, serif !important;
+}
