@@ -12,7 +12,7 @@ order: 1
 
 ---
 
-Hi, I'm **jyaenugu**.
+Hi, I'm **Jyaenugu**.
 
 I graduated from the Department of Software and I'm currently pursuing a master's degree in Artificial Intelligence.
 
