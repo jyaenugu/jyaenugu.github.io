@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-newspaper
-order: 4
+order: 5
 title: News
 ---
 

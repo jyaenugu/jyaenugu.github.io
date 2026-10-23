@@ -170,9 +170,9 @@ collections:
   tabs:
     output: true
     sort_by: order
-  series:
+  albums:
     output: true
-    permalink: /series/:path/
+    permalink: /albums/:path/
   thoughts:
     output: true
     permalink: /thoughts/:path/
@@ -200,7 +200,7 @@ defaults:
       permalink: /:title/
   - scope:
       path: ""
-      type: series
+      type: albums
     values:
       layout: post
       comments: true

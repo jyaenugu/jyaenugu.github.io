@@ -1,6 +1,6 @@
 ---
 layout: page
 icon: fas fa-feather-pointed
-order: 5
+order: 6
 title: Thoughts
 ---
