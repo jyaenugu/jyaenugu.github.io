@@ -24,7 +24,7 @@ Courses I took as an undergraduate.
 
 ## Awards
 
-- 2025 · **Gold Prize (2nd place)** — SW Capstone Design Competition
+- 2025 · **Gold Prize (2nd place)** — SW Capstone Design Competition · [Project](https://app.notion.com/p/Software-Capstone-Project-2025-2ebab3a416ec80348fa9f853c8c821b3)
 - 2025 · **President's Award** — Generative AI Use Case Essay Contest · [Interview (KR)](https://blog.naver.com/hallymde1330/223942742289)
 - 2025 · **Excellence Award** — Gangwon SW Festival Poster Exhibition
 
