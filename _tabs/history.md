@@ -9,14 +9,15 @@ title: History
 
 Courses I took as an undergraduate.
 
-**B.S. in Software · GPA 4.25 / 4.5**
+**B.S. in Software, Hallym University · GPA 4.25 / 4.5**
 
 ## Timeline
 
 | Period | |
 | --- | --- |
-| 2021.03 – 2026.02 | B.S. in Software |
+| 2021.03 – 2026.02 | B.S. in Software, Hallym University |
 | 2023.01 – 2025.12 | Undergraduate Researcher (AI Accelerator Lab) |
+| 2023 Summer | Overseas IT Training Program, University of York (UK) |
 | 2024.03 – 2025.02 | Leave of Absence |
 | 2025.03 | Intern (AI Cheminformatics Lab) |
 | 2025.06 – 2025.08 | Intern (AI Bioinformatics Lab) |
@@ -24,7 +25,7 @@ Courses I took as an undergraduate.
 ## Awards
 
 - 2025 · **Gold Prize (2nd place)** — SW Capstone Design Competition
-- 2025 · **President's Award** — Generative AI Use Case Essay Contest
+- 2025 · **President's Award** — Generative AI Use Case Essay Contest · [Interview (KR)](https://blog.naver.com/hallymde1330/223942742289)
 - 2025 · **Excellence Award** — Gangwon SW Festival Poster Exhibition
 
 ## Courses
