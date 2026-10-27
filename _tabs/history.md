@@ -16,11 +16,11 @@ Courses I took as an undergraduate.
 | Period | |
 | --- | --- |
 | 2021.03 – 2026.02 | B.S. in Software, Hallym University |
-| 2023.01 – 2025.12 | Undergraduate Researcher (A.I. Accelerator Computing Lab) |
+| 2023.01 – 2025.12 | Undergraduate Researcher ([A.I. Accelerator Computing Lab](https://sites.google.com/site/embeddedsochallymuniv/home)) |
 | 2023 Summer | Overseas IT Training Program, University of York (UK) |
 | 2024.03 – 2025.02 | Leave of Absence |
-| 2025.03 | Intern (AI-Powered Cheminformatics Laboratory) |
-| 2025.06 – 2025.08 | Intern (Data Mining & Computational Biology Lab) |
+| 2025.03 | Intern ([AI-Powered Cheminformatics Laboratory](https://sites.google.com/view/hallym-apclab/home)) |
+| 2025.06 – 2025.08 | Intern ([Data Mining & Computational Biology Lab](https://combio.gist.ac.kr/combio/)) |
 
 ## Awards
 
