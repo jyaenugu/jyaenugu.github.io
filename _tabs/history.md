@@ -11,6 +11,16 @@ Courses I took as an undergraduate.
 
 **B.S. in Software · GPA 4.25 / 4.5**
 
+## Timeline
+
+| Period | |
+| --- | --- |
+| 2021.03 – 2026.02 | B.S. in Software |
+| 2023.01 – 2025.12 | Undergraduate Researcher (AI Accelerator Lab) |
+| 2024.03 – 2025.02 | Leave of Absence |
+| 2025.03 | Intern (AI Cheminformatics Lab) |
+| 2025.06 – 2025.08 | Intern (AI Bioinformatics Lab) |
+
 ## Courses
 
 ### AI & Data
