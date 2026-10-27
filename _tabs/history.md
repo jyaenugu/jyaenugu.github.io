@@ -45,7 +45,7 @@ Courses I took as an undergraduate.
 - Web Programming
 - Creative Coding – Web for Everyone
 - Blockchain
-- Capstone Design
+- Capstone Design (Graduation Project)
 
 ### Taught in English
 - Fundamental Issues for International Business in Korea
