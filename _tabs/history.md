@@ -17,7 +17,7 @@ Courses I took as an undergraduate.
 | --- | --- |
 | 2021.03 – 2026.02 | B.S. in Software, Hallym University |
 | 2023.01 – 2025.12 | Undergraduate Researcher ([A.I. Accelerator Computing Lab](https://sites.google.com/site/embeddedsochallymuniv/home)) |
-| 2023.03 – 2023.12 | Resident, [Hallym International Dormitory](https://blog.naver.com/hallymde1330/221346563716) (English-speaking dorm) |
+| 2023.03 – 2023.12 | Resident, [Hallym International Dormitory](https://blog.naver.com/hallymde1330/221346563716) (language-immersion dorm with international students) |
 | 2023 Summer | Overseas IT Training Program, University of York (UK) · [Post (KR)](https://www.facebook.com/HALLYMSOFTWARE/posts/%EC%BD%94%EB%A1%9C%EB%82%98-%EB%8C%80%EC%9C%A0%ED%96%89%EC%9C%BC%EB%A1%9C-%EC%A7%80%EB%82%9C-2%EB%85%84%EA%B0%84-%EB%A9%88%EC%B6%94%EC%96%B4%EC%A1%8C%EB%8D%98-%ED%95%B4%EC%99%B8-it-%EC%97%B0%EC%88%98%EA%B0%80-%EC%A7%84%ED%96%89%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4-20%EB%AA%85%EC%9D%98-%ED%95%99%EC%83%9D%EB%93%A4%EC%9D%B4-%EC%B0%B8%EC%97%AC%ED%95%98%EC%98%80%EA%B3%A0-%EC%98%AC%ED%95%B4%EB%8A%94-%EC%98%81%EA%B5%AD-york-%EB%8C%80%ED%95%99-universi/692814895989946/) |
 | 2024.03 – 2025.02 | Leave of Absence |
 | 2025.03 | Intern ([AI-Powered Cheminformatics Laboratory](https://sites.google.com/view/hallym-apclab/home)) |
