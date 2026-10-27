@@ -1,6 +1,6 @@
 ---
 layout: page
 icon: fas fa-boxes-stacked
-order: 4
+order: 5
 title: Digging
 ---

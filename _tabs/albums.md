@@ -1,6 +1,6 @@
 ---
 layout: page
 icon: fas fa-compact-disc
-order: 2
+order: 3
 title: Albums
 ---
