@@ -65,5 +65,7 @@ Courses I took as an undergraduate.
 - Introduction to Digital Literacy
 
 ### Required & Others
+- Odyssey Seminar 1, 2, 3
+- Big Questions in Life: Joy
 - Freshman Orientation
 - Women's Futsal
