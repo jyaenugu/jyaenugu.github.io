@@ -21,6 +21,12 @@ Courses I took as an undergraduate.
 | 2025.03 | Intern (AI Cheminformatics Lab) |
 | 2025.06 – 2025.08 | Intern (AI Bioinformatics Lab) |
 
+## Awards
+
+- 2025 · **Gold Prize (2nd place)** — SW Capstone Design Competition
+- 2025 · **President's Award** — Generative AI Use Case Essay Contest
+- 2025 · **Excellence Award** — Gangwon SW Festival Poster Exhibition
+
 ## Courses
 
 ### AI & Data
