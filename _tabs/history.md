@@ -40,8 +40,8 @@ Courses I took as an undergraduate.
 - Java Programming 1, 2
 - Open Source Software Development Tools (C#)
 - Discrete Structures
-- Data Structures
-- Algorithms
+- Data Structures (Java)
+- Algorithms (Java)
 - Web Programming
 - Creative Coding – Web for Everyone
 - Blockchain
