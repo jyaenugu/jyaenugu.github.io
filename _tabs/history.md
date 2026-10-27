@@ -63,3 +63,7 @@ Courses I took as an undergraduate.
 - What Is Justice?
 - Introduction to Coding
 - Introduction to Digital Literacy
+
+### Required & Others
+- Freshman Orientation
+- Women's Futsal
