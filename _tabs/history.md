@@ -38,15 +38,13 @@ Courses I took as an undergraduate.
 - Applied Deep Learning
 - Image Processing Programming
 - Python AI Programming
-- Digital Signal Processing
-- Linear Algebra
-- Basics of Statistics Using AI
 
 ### Hardware & Systems
 - Computer Architecture
 - Advanced Computer Architecture
 - Seminar on Computer Architecture
 - Logic Design and Experiment
+- Digital Signal Processing
 - Operating Systems
 - System Programming
 
@@ -57,13 +55,17 @@ Courses I took as an undergraduate.
 - C++ Programming
 - Java Programming 1, 2
 - Open Source Software Development Tools (C#)
-- Discrete Structures
 - Data Structures (Java)
 - Algorithms (Java)
 - Web Programming
 - Creative Coding – Web for Everyone
 - Blockchain
 - Capstone Design (Graduation Project)
+
+### Mathematics
+- Discrete Structures
+- Linear Algebra
+- Basics of Statistics Using AI
 
 ### English
 - Fundamental Issues for International Business in Korea
