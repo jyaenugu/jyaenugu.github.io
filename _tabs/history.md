@@ -64,7 +64,7 @@ Courses I took as an undergraduate.
 - Blockchain
 - Capstone Design (Graduation Project)
 
-### Taught in English
+### English
 - Fundamental Issues for International Business in Korea
 - Korean Comparative Constitutional Law
 - Legal English
