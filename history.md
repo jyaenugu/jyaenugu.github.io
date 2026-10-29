@@ -1,7 +1,6 @@
 ---
 layout: page
-icon: fas fa-clock-rotate-left
-order: 2
+permalink: /history/
 title: History
 ---
 
