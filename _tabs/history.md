@@ -5,8 +5,6 @@ order: 2
 title: History
 ---
 
-학부 시절에 수강한 과목들입니다.
-
 Courses I took as an undergraduate.
 
 **B.S. in Software, Hallym University · GPA 4.25 / 4.5**
@@ -82,11 +80,11 @@ Courses I took as an undergraduate.
 - Ethics in the Age of AI
 - Designing the World with ICT
 - What Is Justice?
-- Introduction to Coding
-- Introduction to Digital Literacy
 
 ### Required & Others
 - Odyssey Seminar 1, 2, 3
 - Big Questions in Life: Joy
 - Freshman Orientation
 - Women's Futsal
+- Introduction to Coding
+- Introduction to Digital Literacy
