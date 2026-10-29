@@ -5,8 +5,6 @@ order: 2
 title: History
 ---
 
-Courses I took as an undergraduate.
-
 **B.S. in Software, Hallym University · GPA 4.25 / 4.5**
 
 ## Timeline
