@@ -11,9 +11,9 @@ order: 1
 
 ## Research Interests
 
-**Now** — AI Protein Design
+**Now** — Protein Design
 
-**Path** — Drug Response Prediction → Binding Affinity → Generative Models → **Protein Design**
+**Path** — Drug Response Prediction → Binding Affinity → Generative Models → Protein Design
 
 ## English Proficiency
 
