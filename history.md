@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /history/
-title: History
 ---
 
-**B.S. in Software, Hallym University · GPA 4.25 / 4.5**
+**B.S. in Software, Hallym University**<br>
+GPA 4.25 / 4.5
 
 ## Timeline
 

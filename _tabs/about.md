@@ -7,7 +7,7 @@ order: 1
 ## Education
 
 - **M.S. in Artificial Intelligence**, GIST · 2026.03 – Present
-- **B.S. in Software**, Hallym University · 2021.03 – 2026.02 · [History →]({{ '/history/' | relative_url }})
+- **B.S. in Software**, Hallym University · 2021.03 – 2026.02 · [Courses & more →]({{ '/history/' | relative_url }})
 
 ## Research Interests
 
