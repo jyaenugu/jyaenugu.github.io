@@ -12,9 +12,8 @@ GPA 4.25 / 4.5
 | --- | --- |
 | 2021.03 – 2026.02 | B.S. in Software, Hallym University |
 | 2023.01 – 2025.12 | Undergraduate Researcher ([A.I. Accelerator Computing Lab](https://sites.google.com/site/embeddedsochallymuniv/home)) |
-| 2025.03 | Intern ([AI-Powered Cheminformatics Laboratory](https://sites.google.com/view/hallym-apclab/home)) |
+| 2024 | Leave of Absence |
 | 2025.06 – 2025.08 | Intern ([Data Mining & Computational Biology Lab](https://combio.gist.ac.kr/combio/)) |
-| 2026.03 – Present | M.S. Student, Department of AI, GIST ([Data Mining & Computational Biology Lab](https://combio.gist.ac.kr/combio/)) |
 
 ## Awards
 
