@@ -391,3 +391,7 @@ kbd {
 }
 
 .stop-info .nowrap { white-space: nowrap; }
+
+.stop-info .album-title {
+  color: var(--heading-color);
+}
