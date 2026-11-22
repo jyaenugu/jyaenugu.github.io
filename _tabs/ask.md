@@ -14,6 +14,11 @@ title: Ask
     I don't see who sent it. Once I answer, public messages show up on the
     board below; private ones stay locked, and only your code opens them.
   </p>
+  <p class="ask-intro">
+    When you hit <strong>Send</strong>, you'll get a code. Save it! For a
+    private message, it's the only way to read my answer.
+  </p>
+  <p class="ask-intro">한국어로 편하게 물어봐도 돼요.</p>
 
   <form class="ask-form" id="ask-form" novalidate>
     <label class="ask-label" for="ask-body">Your message</label>
