@@ -11,7 +11,7 @@ order: 1
   <ol class="metro-stops">
 
     <li class="stop">
-      <div class="stop-name">Hallym University <span class="metro-tag tag-bs">B.S.</span></div>
+      <div class="stop-name">Hallym University</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2021.03 – 2026.02</span>
@@ -21,7 +21,7 @@ order: 1
     </li>
 
     <li class="stop">
-      <div class="stop-name">Hallym University <span class="metro-tag tag-ur">Research</span></div>
+      <div class="stop-name">Hallym University</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2023.01 – 2025.12</span>
@@ -40,7 +40,7 @@ order: 1
     </li>
 
     <li class="stop">
-      <div class="stop-name">GIST <span class="metro-tag tag-intern">Intern</span></div>
+      <div class="stop-name">GIST</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2025.06 – 2025.08</span>
@@ -51,7 +51,7 @@ order: 1
     </li>
 
     <li class="stop stop-current">
-      <div class="stop-name">GIST <span class="metro-tag tag-ms">M.S.</span></div>
+      <div class="stop-name">GIST</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2026.03 – now</span>

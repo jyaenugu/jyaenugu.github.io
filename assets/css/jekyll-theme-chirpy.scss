@@ -120,7 +120,7 @@ kbd {
 
 /* ---- About: timeline drawn as a subway line map ----
    Wide: one horizontal line, station names slanted above, details below.
-   Narrow (container < 640px): the line turns vertical. */
+   Narrow (container < 720px): the line turns vertical. */
 :root {
   --metro-yellow: #f5b400;
   --metro-ring: #222;
@@ -134,7 +134,7 @@ kbd {
 }
 
 .metro-stops {
-  --name-h: 8.5rem; /* room for the slanted station names */
+  --name-h: 7rem; /* room for the slanted station names */
   --dot: 26px;
   position: relative;
   display: grid;
@@ -159,7 +159,7 @@ kbd {
 .metro-terminal {
   position: absolute;
   z-index: 2;
-  top: calc(8.5rem + 13px);
+  top: calc(7rem + 13px);
   transform: translateY(-50%);
   padding: 0.1rem 0.65rem;
   font-size: 0.8rem;
@@ -194,22 +194,6 @@ kbd {
   color: var(--heading-color);
 }
 
-.metro-tag {
-  display: inline-block;
-  margin-left: 0.2rem;
-  padding: 0 0.45rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1.5;
-  vertical-align: 0.15em;
-  color: #fff;
-  border-radius: 999px;
-}
-
-.tag-bs { background: #00a84d; }
-.tag-ur { background: #0c8e72; }
-.tag-intern { background: #d4003b; }
-.tag-ms { background: #0052a4; }
 
 /* Transfer-station style dot */
 .stop-dot {
@@ -265,8 +249,8 @@ kbd {
   align-items: center;
   gap: 0.1rem;
   margin-top: 0.75rem;
-  padding: 0 0.3rem;
-  font-size: 0.8rem;
+  padding: 0 0.15rem;
+  font-size: 0.92rem;
   line-height: 1.35;
   text-align: center;
   color: var(--text-muted-color);
@@ -279,7 +263,7 @@ kbd {
 .stop-date {
   margin-bottom: 0.25rem;
   padding: 0.05rem 0.45rem;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   color: var(--heading-color);
   background: rgba(245, 180, 0, 0.22);
@@ -287,7 +271,7 @@ kbd {
 }
 
 /* ---- Narrow: vertical line ---- */
-@container (max-width: 640px) {
+@container (max-width: 720px) {
   .metro-stops {
     --line-x: 17px;
     display: block;
