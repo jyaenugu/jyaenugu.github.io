@@ -44,7 +44,7 @@ order: 1
       <div class="stop-info">
         <span class="stop-date">2025.06 – 2025.08</span>
         <strong>Research Intern</strong>
-        <span>AI Bioinformatics Lab</span>
+        <span>Data Mining &amp; Computational Biology Lab</span>
         <span>Advised by Prof. Hyunju Lee</span>
       </div>
     </li>
@@ -62,7 +62,7 @@ order: 1
       <div class="stop-info">
         <span class="stop-date">2023.01 – 2025.12</span>
         <strong>Undergraduate Research Trainee</strong>
-        <span>AI Accelerator Lab (AIAC)</span>
+        <span>AI Accelerator Lab</span>
         <span>Advised by Prof. Jeong-Gun Lee</span>
       </div>
     </li>
