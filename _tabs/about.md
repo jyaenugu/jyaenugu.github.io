@@ -32,20 +32,20 @@ order: 1
       <div class="stop-name">GIST</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
-        <span class="stop-date">2026.03 – now</span>
+        <span class="stop-date">2026.03&nbsp;– now</span>
         <strong>M.S. Student</strong>
         <span>Department of AI</span>
-        <span>Advised by Prof. Hyunju Lee</span>
+        <span>Advised by<br>Prof. Hyunju Lee</span>
       </div>
     </li>
 
     <li class="stop">
       <span class="stop-dot"></span>
       <div class="stop-info">
-        <span class="stop-date">2025.06 – 2025.08</span>
+        <span class="stop-date">2025.06&nbsp;– 2025.08</span>
         <strong>Research Intern</strong>
         <span>Data Mining &amp; Computational Biology Lab</span>
-        <span>Advised by Prof. Hyunju Lee</span>
+        <span>Advised by<br>Prof. Hyunju Lee</span>
       </div>
     </li>
 
@@ -53,17 +53,17 @@ order: 1
       <div class="stop-name">Leave of Absence</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
-        <span class="stop-date">2024.03 – 2025.02</span>
+        <span class="stop-date">2024.03&nbsp;– 2025.02</span>
       </div>
     </li>
 
     <li class="stop">
       <span class="stop-dot"></span>
       <div class="stop-info">
-        <span class="stop-date">2023.01 – 2025.12</span>
+        <span class="stop-date">2023.01&nbsp;– 2025.12</span>
         <strong>Undergraduate Research Trainee</strong>
         <span>AI Accelerator Lab</span>
-        <span>Advised by Prof. Jeong-Gun Lee</span>
+        <span>Advised by<br><span class="nowrap">Prof. Jeong-Gun Lee</span></span>
       </div>
     </li>
 
@@ -71,7 +71,7 @@ order: 1
       <div class="stop-name">Hallym University</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
-        <span class="stop-date">2021.03 – 2026.02</span>
+        <span class="stop-date">2021.03&nbsp;– 2026.02</span>
         <strong>B.S.</strong>
         <span>Division of Software</span>
       </div>
