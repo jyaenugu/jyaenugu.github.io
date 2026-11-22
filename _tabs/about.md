@@ -87,10 +87,11 @@ order: 1
 
 <!-- Thin diagonal branch line, oldest at the bottom right, newest at the top
      left. Rows are 64px; each stop's --x is on the straight line drawn by the
-     SVG (x = 6% top … 62% bottom, 18.67% per row). -->
+     SVG: S-curves between stations at x = 6% top … 62% bottom (18.67% per
+     row), y = 32 + 64*row. -->
 <div class="path" markdown="0">
   <svg class="path-line" viewBox="0 0 100 256" preserveAspectRatio="none" aria-hidden="true">
-    <line x1="66.67" y1="240" x2="1.33" y2="16" />
+    <path d="M62 246 V224 C62 192 43.33 192 43.33 160 C43.33 128 24.67 128 24.67 96 C24.67 64 6 64 6 32 V10" />
   </svg>
   <ol class="path-stops">
     <li class="path-now" style="--x: 6%">
@@ -107,7 +108,7 @@ order: 1
     </li>
     <li style="--x: 62%">
       <span class="path-dot"></span>
-      <div class="path-info"><span class="path-date">2026.03</span><strong>Binding Affinity &amp; GNNs</strong></div>
+      <div class="path-info"><span class="path-date">2026.03</span><strong>Drug–Target Affinity &amp; GNNs</strong></div>
     </li>
   </ol>
 </div>

@@ -607,7 +607,8 @@ kbd {
   overflow: visible;
 }
 
-.path-line line {
+.path-line path {
+  fill: none;
   stroke: var(--metro-yellow);
   stroke-width: 6;
   stroke-linecap: round;
