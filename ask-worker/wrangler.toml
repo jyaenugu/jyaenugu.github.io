@@ -1,0 +1,11 @@
+name = "ask-worker"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://jyaenugu.github.io,http://127.0.0.1:4000,http://localhost:4000"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ask-db"
+database_id = "af807628-9a6a-4768-b20c-1b297d9def05"
