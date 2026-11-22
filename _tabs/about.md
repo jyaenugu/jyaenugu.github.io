@@ -11,6 +11,24 @@ order: 1
   <ol class="metro-stops">
 
     <li class="stop stop-current">
+      <span class="metro-train" role="img" aria-label="Train leaving GIST, heading toward now">
+        <svg viewBox="0 0 84 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g class="train-speed">
+            <line x1="68" y1="9" x2="82" y2="9" />
+            <line x1="70" y1="15" x2="80" y2="15" />
+            <line x1="68" y1="21" x2="82" y2="21" />
+          </g>
+          <path class="train-body" d="M16 3 H60 Q64 3 64 7 V24 H3 V20 Q3 5 16 3 Z" />
+          <path class="train-glass" d="M6 15 Q7 8 15 7 V15 Z" />
+          <rect class="train-glass" x="20" y="7.5" width="10" height="7" rx="1.2" />
+          <rect class="train-glass" x="34" y="7.5" width="10" height="7" rx="1.2" />
+          <rect class="train-glass" x="48" y="7.5" width="10" height="7" rx="1.2" />
+          <rect class="train-stripe" x="3.5" y="18" width="60" height="2" />
+          <circle class="train-light" cx="6" cy="21" r="1.6" />
+          <circle class="train-wheel" cx="17" cy="26" r="3" />
+          <circle class="train-wheel" cx="51" cy="26" r="3" />
+        </svg>
+      </span>
       <div class="stop-name">GIST</div>
       <span class="stop-dot"></span>
       <div class="stop-info">

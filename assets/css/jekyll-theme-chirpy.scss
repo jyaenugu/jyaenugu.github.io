@@ -140,7 +140,7 @@ kbd {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   margin: 0;
-  padding: 0 3.25rem;
+  padding: 0 3rem 0 4.5rem;
   list-style: none;
 }
 
@@ -262,12 +262,64 @@ kbd {
 
 .stop-date {
   margin-bottom: 0.25rem;
-  padding: 0.05rem 0.45rem;
-  font-size: 0.8rem;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.75rem;
   white-space: nowrap;
   color: var(--heading-color);
   background: rgba(245, 180, 0, 0.22);
   border-radius: 4px;
+}
+
+/* Yellow train that just left GIST, heading toward "Now" (nose = direction) */
+.metro-train {
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--name-h) + 13px - 26px);
+  right: calc(50% + 17px);
+  width: 64px;
+  height: 23px;
+  animation: train-bob 1.2s ease-in-out infinite;
+}
+
+.metro-train svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.train-body {
+  fill: var(--metro-yellow);
+  stroke: #222;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.train-glass { fill: #2f3b48; }
+.train-stripe { fill: #fff; }
+.train-light { fill: #fffbe6; stroke: #222; stroke-width: 0.6; }
+.train-wheel { fill: #222; }
+
+.train-speed line {
+  stroke: var(--text-muted-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 6 4;
+  animation: train-speed 0.6s linear infinite;
+}
+
+@keyframes train-bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -1px; }
+}
+
+@keyframes train-speed {
+  to { stroke-dashoffset: -10; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metro-train,
+  .train-speed line { animation: none; }
 }
 
 /* ---- Narrow: vertical line ---- */
@@ -275,7 +327,7 @@ kbd {
   .metro-stops {
     --line-x: 17px;
     display: block;
-    padding: 2.5rem 0 2.75rem;
+    padding: 6.5rem 0 2.75rem;
   }
 
   .metro-stops::before {
@@ -320,6 +372,13 @@ kbd {
     left: calc(var(--line-x) - 7px);
     margin: 0;
     top: 0.35rem;
+  }
+
+  .metro-train {
+    top: calc(0.15rem - 6px - 32px - 11.5px);
+    right: auto;
+    left: calc(var(--line-x) - 32px);
+    transform: rotate(90deg);
   }
 
   .stop-info {
