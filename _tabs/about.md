@@ -21,7 +21,6 @@ order: 1
     </li>
 
     <li class="stop">
-      <div class="stop-name">Hallym University</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2023.01 – 2025.12</span>
@@ -40,7 +39,6 @@ order: 1
     </li>
 
     <li class="stop">
-      <div class="stop-name">GIST</div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2025.06 – 2025.08</span>
