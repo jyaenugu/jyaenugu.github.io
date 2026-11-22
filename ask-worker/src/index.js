@@ -1,9 +1,9 @@
-// Anonymous message board API for the blog's Ask page.
+// Anonymous, private-only message API for the blog's Ask page.
 //
-// Every message gets a random code that only the sender sees. Messages stay
-// hidden until answered; then public ones are listed in full, private ones
-// only as a lock, openable with the code. The admin (ADMIN_TOKEN secret)
-// reads everything and answers from the same page (/ask/#admin).
+// Every message gets a random code that only the sender sees; that code is
+// the only way to read it (and its answer) back. Nothing is ever listed
+// publicly. The admin (ADMIN_TOKEN secret) reads everything and answers from
+// the same page (/ask/#admin).
 
 const MAX_BODY = 2000;
 const MAX_ANSWER = 5000;
@@ -36,7 +36,6 @@ async function route(request, env, ctx) {
   const path = url.pathname.replace(/\/+$/, "");
   const method = request.method;
 
-  if (path === "/api/posts" && method === "GET") return listAnswered(env);
   if (path === "/api/posts" && method === "POST") return createPost(request, env, ctx);
   if (path === "/api/lookup" && method === "POST") return lookup(request, env);
 
@@ -53,27 +52,13 @@ async function route(request, env, ctx) {
 
 // ---- public ----
 
-async function listAnswered(env) {
-  const { results } = await env.DB.prepare(
-    `SELECT id, visibility, body, answer, created_at, answered_at
-       FROM messages WHERE answer IS NOT NULL
-      ORDER BY answered_at DESC LIMIT 300`
-  ).all();
-  const posts = results.map((r) =>
-    r.visibility === "public"
-      ? r
-      : { id: r.id, visibility: "private", created_at: r.created_at, answered_at: r.answered_at }
-  );
-  return json({ posts });
-}
-
 async function createPost(request, env, ctx) {
   const data = await readJson(request);
   // Honeypot: real visitors never see or fill this field.
   if (data.website) return json({ code: makeCode() }, 201);
 
   const body = String(data.body ?? "").trim();
-  const visibility = data.visibility === "private" ? "private" : "public";
+  const visibility = "private"; // every message is private
   if (!body) throw new HttpError(400, "empty message");
   if (body.length > MAX_BODY) throw new HttpError(400, "message too long");
 

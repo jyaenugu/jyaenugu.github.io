@@ -88,7 +88,7 @@
         method: "POST",
         body: {
           body: body,
-          visibility: form.elements.visibility.value,
+          visibility: "private",
           website: form.elements.website.value,
         },
       });
@@ -132,22 +132,6 @@
     }
   });
 
-  // ---- board ----
-  async function loadBoard() {
-    const board = $("ask-board");
-    try {
-      const data = await api("/api/posts");
-      if (!data.posts.length) {
-        board.replaceChildren(el("p", "ask-muted", "Nothing here yet. Be the first to ask."));
-        return;
-      }
-      board.replaceChildren(...data.posts.map((p) => card(p, { locked: p.visibility === "private" })));
-    } catch (err) {
-      board.replaceChildren(el("p", "ask-muted", "Couldn't load the board right now."));
-    }
-  }
-  loadBoard();
-
   // ---- admin (/ask/#admin) ----
   function adminCard(post, token) {
     const c = card(post, { admin: true });
@@ -173,7 +157,6 @@
       try {
         await api("/api/admin/posts/" + post.id, { method: "PUT", body: { answer: ta.value }, token: token });
         await loadInbox(token);
-        loadBoard();
       } catch (err) {
         msg.textContent = err.message;
         save.disabled = false;
@@ -184,7 +167,6 @@
       try {
         await api("/api/admin/posts/" + post.id, { method: "DELETE", token: token });
         await loadInbox(token);
-        loadBoard();
       } catch (err) {
         msg.textContent = err.message;
       }

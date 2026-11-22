@@ -11,25 +11,20 @@ title: Ask
 
   <p class="ask-intro">
     Leave me an anonymous message: a question, a thought, anything.
-    I don't see who sent it. Once I answer, public messages show up on the
-    board below; private ones stay locked, and only your code opens them.
+    I don't see who sent it, and every message stays private: only you
+    and I can read it.
   </p>
   <p class="ask-intro">
-    When you hit <strong>Send</strong>, you'll get a code. Save it! For a
-    private message, it's the only way to read my answer.
+    When you hit <strong>Send</strong>, you'll get a code. Save it! It's the
+    only way to read my answer.
   </p>
-  <p class="ask-intro">한국어로 편하게 물어봐도 돼요.</p>
+  <p class="ask-intro">Korean is welcome too. Write in whichever language feels comfortable.</p>
 
   <form class="ask-form" id="ask-form" novalidate>
     <label class="ask-label" for="ask-body">Your message</label>
     <textarea id="ask-body" name="body" rows="5" maxlength="2000" required
       placeholder="Ask me anything…"></textarea>
-    <div class="ask-row">
-      <fieldset class="ask-visibility">
-        <legend class="visually-hidden">Who can see the answer</legend>
-        <label><input type="radio" name="visibility" value="public" checked> Public</label>
-        <label><input type="radio" name="visibility" value="private"> Private <span class="ask-hint">(only you, with your code)</span></label>
-      </fieldset>
+    <div class="ask-row ask-row-end">
       <span class="ask-count" id="ask-count">0 / 2000</span>
     </div>
     <!-- Honeypot for bots; hidden from people and screen readers -->
@@ -55,9 +50,6 @@ title: Ask
     <button type="submit" class="ask-btn ask-btn-quiet">Open</button>
   </form>
   <div id="ask-lookup-result"></div>
-
-  <h2>Board</h2>
-  <div class="ask-board" id="ask-board"><p class="ask-muted">Loading…</p></div>
 
   <section class="ask-admin" id="ask-admin" hidden>
     <h2>Inbox</h2>
