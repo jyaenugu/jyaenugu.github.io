@@ -48,7 +48,7 @@ order: 1
       <span class="tl-date">2021.03 – 2026.02</span>
     </div>
     <div class="tl-role">B.S.</div>
-    <div class="tl-desc">Software</div>
+    <div class="tl-desc">Division of Software</div>
   </div>
 
 </div>
