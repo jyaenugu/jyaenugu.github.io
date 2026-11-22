@@ -23,7 +23,7 @@ order: 1
       <span class="tl-date">2025.06 – 2025.08</span>
     </div>
     <div class="tl-role">Research Intern</div>
-    <div class="tl-desc">AI Bioinformatics Lab. Advised by Prof. Hyunju Lee</div>
+    <div class="tl-desc">AI Bioinformatics Lab<br>Advised by Prof. Hyunju Lee</div>
   </div>
 
   <div class="tl-item tl-left tl-break">
@@ -39,7 +39,7 @@ order: 1
       <span class="tl-date">2023.01 – 2025.12</span>
     </div>
     <div class="tl-role">Undergraduate Research Trainee</div>
-    <div class="tl-desc">AI Accelerator Lab (AIAC). Advised by Prof. Jeong-Gun Lee</div>
+    <div class="tl-desc">AI Accelerator Lab (AIAC)<br>Advised by Prof. Jeong-Gun Lee</div>
   </div>
 
   <div class="tl-item tl-right">
