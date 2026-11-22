@@ -588,3 +588,107 @@ kbd {
     margin-left: 0.3rem;
   }
 }
+
+/* ---- About: Research Path, a thinner, lighter yellow branch line running
+   diagonally from bottom right (oldest) to top left (now).
+   Narrow (container < 560px): plain vertical line. */
+.path {
+  container-type: inline-size;
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.path-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 256px; /* 4 rows x 64px */
+  overflow: visible;
+}
+
+.path-line line {
+  stroke: var(--metro-yellow);
+  stroke-width: 6;
+  stroke-linecap: round;
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.path-stops {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.path-stops li {
+  position: relative;
+  height: 64px;
+  margin: 0;
+}
+
+.path-dot {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(var(--x) - 8px);
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid rgba(245, 180, 0, 0.75);
+  background: var(--main-bg);
+}
+
+.path-now .path-dot {
+  background: rgba(245, 180, 0, 0.75);
+}
+
+/* Label sits right of its dot, far enough out that the diagonal line
+   never runs under the text. */
+.path-info {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--x) + 7%);
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  color: var(--text-muted-color);
+}
+
+.path-info strong {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.path-date {
+  padding: 0 0.3rem;
+  font-size: 0.8rem;
+  color: var(--heading-color);
+  background: rgba(245, 180, 0, 0.15);
+  border-radius: 4px;
+}
+
+@container (max-width: 560px) {
+  .path-line { display: none; }
+
+  .path-stops::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    bottom: 32px;
+    left: 8px;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--metro-yellow);
+    opacity: 0.5;
+  }
+
+  .path-stops li { --x: 10px !important; }
+  .path-info { left: 34px; }
+}
