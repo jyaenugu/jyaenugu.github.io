@@ -117,3 +117,192 @@ header .post-desc {
 kbd {
   font-family: "Lora", "Noto Serif KR", Georgia, serif !important;
 }
+
+/* ---- About: resume timeline (center line, items alternate left/right) ---- */
+:root {
+  --tl-line: #4a4a4a;
+  --tl-accent: #ca8a04; /* gold, matches the sidebar */
+  --tl-date-color: #6b4f00;
+}
+
+html[data-mode="dark"] {
+  --tl-line: #9ca3af;
+  --tl-accent: #eab308;
+  --tl-date-color: #fde68a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"]) {
+    --tl-line: #9ca3af;
+    --tl-accent: #eab308;
+    --tl-date-color: #fde68a;
+  }
+}
+
+.resume-timeline {
+  position: relative;
+  margin: 2rem 0 1rem;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.resume-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--tl-line) 1.5rem,
+    var(--tl-line) calc(100% - 1.5rem),
+    transparent
+  );
+}
+
+.tl-item {
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: 50%;
+  padding: 0 0 2.75rem 2.25rem;
+}
+
+.tl-item.tl-left {
+  margin-left: 0;
+  padding: 0 2.25rem 2.75rem 0;
+  text-align: right;
+}
+
+/* Dot on the center line */
+.tl-item::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0.45rem;
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 4px solid var(--tl-accent);
+  background: var(--main-bg);
+  z-index: 1;
+}
+
+.tl-item.tl-left::before {
+  left: auto;
+  right: -11px;
+}
+
+.tl-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.tl-left .tl-head {
+  flex-direction: row-reverse;
+}
+
+.tl-org {
+  position: relative;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Little arrow pointing at the line */
+.tl-org::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  border-left: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.tl-left .tl-org::before {
+  left: auto;
+  right: -6px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.tl-date {
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: var(--tl-date-color);
+  background: var(--card-border-color);
+  border-radius: 3px;
+}
+
+.tl-role {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.tl-desc {
+  color: var(--text-muted-color);
+}
+
+/* Leave of absence: a quieter, hollow marker */
+.tl-break .tl-org {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-muted-color);
+  box-shadow: none;
+}
+
+.tl-break::before {
+  border-style: dashed;
+  border-color: var(--tl-line);
+}
+
+/* Narrow screens: line on the left, every item on the right */
+@media (max-width: 767.98px) {
+  .resume-timeline::before {
+    left: 11px;
+  }
+
+  .tl-item,
+  .tl-item.tl-left {
+    width: auto;
+    margin-left: 0;
+    padding: 0 0 2.25rem 2.75rem;
+    text-align: left;
+  }
+
+  .tl-item::before,
+  .tl-item.tl-left::before {
+    left: 0;
+    right: auto;
+  }
+
+  .tl-left .tl-head {
+    flex-direction: row;
+  }
+
+  .tl-head {
+    flex-wrap: wrap;
+  }
+
+  .tl-left .tl-org::before {
+    left: -6px;
+    right: auto;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
