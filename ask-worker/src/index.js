@@ -12,13 +12,13 @@ const ADMIN_FAIL_LIMIT_PER_HOUR = 10;
 const CODE_ALPHABET = "abcdefghjkmnpqrstuvwxyz23456789"; // no 0/o, 1/l/i
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const cors = corsHeaders(request, env);
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: cors });
     }
     try {
-      const res = await route(request, env);
+      const res = await route(request, env, ctx);
       for (const [k, v] of Object.entries(cors)) res.headers.set(k, v);
       return res;
     } catch (err) {
@@ -31,13 +31,13 @@ export default {
   },
 };
 
-async function route(request, env) {
+async function route(request, env, ctx) {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/+$/, "");
   const method = request.method;
 
   if (path === "/api/posts" && method === "GET") return listAnswered(env);
-  if (path === "/api/posts" && method === "POST") return createPost(request, env);
+  if (path === "/api/posts" && method === "POST") return createPost(request, env, ctx);
   if (path === "/api/lookup" && method === "POST") return lookup(request, env);
 
   if (path.startsWith("/api/admin/")) {
@@ -67,7 +67,7 @@ async function listAnswered(env) {
   return json({ posts });
 }
 
-async function createPost(request, env) {
+async function createPost(request, env, ctx) {
   const data = await readJson(request);
   // Honeypot: real visitors never see or fill this field.
   if (data.website) return json({ code: makeCode() }, 201);
@@ -85,6 +85,7 @@ async function createPost(request, env) {
   )
     .bind(body, visibility, await sha256(normalizeCode(code)), nowIso())
     .run();
+  ctx.waitUntil(notifyNewMessage(env, body, visibility));
   return json({ code }, 201);
 }
 
@@ -100,6 +101,32 @@ async function lookup(request, env) {
     .first();
   if (!row) throw new HttpError(404, "no message with that code");
   return json({ post: row });
+}
+
+// Emails the owner about a new message via Resend. Needs the RESEND_API_KEY
+// and NOTIFY_EMAIL secrets; without them it quietly does nothing. Failures
+// are logged only, so sending a message never breaks because of email.
+async function notifyNewMessage(env, body, visibility) {
+  if (!env.RESEND_API_KEY || !env.NOTIFY_EMAIL) return;
+  const preview = body.length > 500 ? body.slice(0, 500) + '…' : body;
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: 'Bearer ' + env.RESEND_API_KEY,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'Ask board <onboarding@resend.dev>',
+        to: [env.NOTIFY_EMAIL],
+        subject: 'New ' + visibility + ' message on Ask',
+        text: preview + "\n\n— Answer it at " + (env.ADMIN_URL || "https://jyaenugu.github.io/ask/#admin"),
+      }),
+    });
+    if (!res.ok) console.error('resend failed', res.status, await res.text());
+  } catch (err) {
+    console.error('resend error', err);
+  }
 }
 
 // ---- admin ----
