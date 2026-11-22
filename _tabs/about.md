@@ -6,49 +6,61 @@ order: 1
 
 ## Timeline
 
-<div class="resume-timeline" markdown="0">
+<div class="metro" markdown="0">
+  <span class="metro-terminal metro-start">2021</span>
+  <ol class="metro-stops">
 
-  <div class="tl-item tl-right">
-    <div class="tl-head">
-      <span class="tl-org">GIST</span>
-      <span class="tl-date">2026.03 – now</span>
-    </div>
-    <div class="tl-role">M.S. Student</div>
-    <div class="tl-desc">Department of AI. Advised by Prof. Hyunju Lee</div>
-  </div>
+    <li class="stop">
+      <div class="stop-name">Hallym University <span class="metro-tag tag-bs">B.S.</span></div>
+      <span class="stop-dot"></span>
+      <div class="stop-info">
+        <span class="stop-date">2021.03 – 2026.02</span>
+        <strong>B.S.</strong>
+        <span>Division of Software</span>
+      </div>
+    </li>
 
-  <div class="tl-item tl-left">
-    <div class="tl-head">
-      <span class="tl-org">GIST</span>
-      <span class="tl-date">2025.06 – 2025.08</span>
-    </div>
-    <div class="tl-role">Research Intern</div>
-    <div class="tl-desc">AI Bioinformatics Lab<br>Advised by Prof. Hyunju Lee</div>
-  </div>
+    <li class="stop">
+      <div class="stop-name">Hallym University <span class="metro-tag tag-ur">Research</span></div>
+      <span class="stop-dot"></span>
+      <div class="stop-info">
+        <span class="stop-date">2023.01 – 2025.12</span>
+        <strong>Undergraduate Research Trainee</strong>
+        <span>AI Accelerator Lab (AIAC)</span>
+        <span>Advised by Prof. Jeong-Gun Lee</span>
+      </div>
+    </li>
 
-  <div class="tl-item tl-left tl-break">
-    <div class="tl-head">
-      <span class="tl-org">Leave of Absence</span>
-      <span class="tl-date">2024.03 – 2025.02</span>
-    </div>
-  </div>
+    <li class="stop stop-minor">
+      <div class="stop-name">Leave of Absence</div>
+      <span class="stop-dot"></span>
+      <div class="stop-info">
+        <span class="stop-date">2024.03 – 2025.02</span>
+      </div>
+    </li>
 
-  <div class="tl-item tl-left">
-    <div class="tl-head">
-      <span class="tl-org">Hallym University</span>
-      <span class="tl-date">2023.01 – 2025.12</span>
-    </div>
-    <div class="tl-role">Undergraduate Research Trainee</div>
-    <div class="tl-desc">AI Accelerator Lab (AIAC)<br>Advised by Prof. Jeong-Gun Lee</div>
-  </div>
+    <li class="stop">
+      <div class="stop-name">GIST <span class="metro-tag tag-intern">Intern</span></div>
+      <span class="stop-dot"></span>
+      <div class="stop-info">
+        <span class="stop-date">2025.06 – 2025.08</span>
+        <strong>Research Intern</strong>
+        <span>AI Bioinformatics Lab</span>
+        <span>Advised by Prof. Hyunju Lee</span>
+      </div>
+    </li>
 
-  <div class="tl-item tl-right">
-    <div class="tl-head">
-      <span class="tl-org">Hallym University</span>
-      <span class="tl-date">2021.03 – 2026.02</span>
-    </div>
-    <div class="tl-role">B.S.</div>
-    <div class="tl-desc">Division of Software</div>
-  </div>
+    <li class="stop stop-current">
+      <div class="stop-name">GIST <span class="metro-tag tag-ms">M.S.</span></div>
+      <span class="stop-dot"></span>
+      <div class="stop-info">
+        <span class="stop-date">2026.03 – now</span>
+        <strong>M.S. Student</strong>
+        <span>Department of AI</span>
+        <span>Advised by Prof. Hyunju Lee</span>
+      </div>
+    </li>
 
+  </ol>
+  <span class="metro-terminal metro-end">Now</span>
 </div>
