@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-## Resume
+## Timeline
 
 <div class="resume-timeline" markdown="0">
 
