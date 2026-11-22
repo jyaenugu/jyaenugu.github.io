@@ -82,3 +82,8 @@ order: 1
   </ol>
   <span class="metro-terminal metro-end">2021</span>
 </div>
+
+## Language
+
+- **Korean** — Native
+- **English** — IELTS 7.0 (Dec 2024)
