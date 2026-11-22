@@ -29,7 +29,7 @@ order: 1
           <circle class="train-wheel" cx="51" cy="26" r="3" />
         </svg>
       </span>
-      <div class="stop-name">GIST</div>
+      <div class="stop-name">GIST <span class="stop-place">Gwangju, South Korea</span></div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2026.03&nbsp;– now</span>
@@ -70,7 +70,7 @@ order: 1
     </li>
 
     <li class="stop">
-      <div class="stop-name">Hallym University</div>
+      <div class="stop-name">Hallym University <span class="stop-place">Chuncheon, South Korea</span></div>
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2021.03&nbsp;– 2026.02</span>

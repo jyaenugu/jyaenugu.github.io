@@ -569,3 +569,22 @@ kbd {
 .ask-admin #ask-admin-login { margin-bottom: 0.5rem; }
 
 .ask-row-end { justify-content: flex-end; }
+
+/* Campus location with a station name, quiet. Wide: a second slanted line
+   under the name (one long slanted line would run off the top). Narrow:
+   inline after the name. */
+.stop-place {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-muted-color);
+  opacity: 0.85;
+}
+
+@container (max-width: 720px) {
+  .stop-place {
+    display: inline;
+    margin-left: 0.3rem;
+  }
+}
