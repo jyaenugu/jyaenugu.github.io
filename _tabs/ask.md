@@ -18,7 +18,11 @@ title: Ask
     When you hit <strong>Send</strong>, you'll get a code. Save it! It's the
     only way to read my answer.
   </p>
-  <p class="ask-intro">Korean is welcome too. Write in whichever language feels comfortable.</p>
+  <p class="ask-intro">Please write in Korean or English.</p>
+  <p class="ask-intro">
+    Don't need to stay anonymous? Just email me at
+    <a href="mailto:hanseohee@gm.gist.ac.kr">hanseohee@gm.gist.ac.kr</a>.
+  </p>
 
   <form class="ask-form" id="ask-form" novalidate>
     <label class="ask-label" for="ask-body">Your message</label>
