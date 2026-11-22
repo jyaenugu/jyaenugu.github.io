@@ -593,6 +593,10 @@ kbd {
    diagonally from bottom right (oldest) to top left (now).
    Narrow (container < 560px): plain vertical line. */
 .path {
+  /* Left gap = --x0 minus the dot radius. The bottom label (~203px) starts 7%
+     right of its dot; ending it at the mirrored gap gives this span. */
+  --x0: 6%;
+  --span: calc(81% - 195px);
   container-type: inline-size;
   position: relative;
   margin: 1rem 0 2rem;
@@ -601,8 +605,8 @@ kbd {
 .path-line {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: var(--x0);
+  width: var(--span);
   height: 256px; /* 4 rows x 64px */
   overflow: visible;
 }
@@ -624,6 +628,7 @@ kbd {
 }
 
 .path-stops li {
+  --x: calc(var(--x0) + var(--span) * var(--f, 0));
   position: relative;
   height: 64px;
   margin: 0;

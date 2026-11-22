@@ -85,28 +85,29 @@ order: 1
 
 ## Research Path
 
-<!-- Thin diagonal branch line, oldest at the bottom right, newest at the top
-     left. Rows are 64px; each stop's --x is on the straight line drawn by the
-     SVG: S-curves between stations at x = 6% top … 62% bottom (18.67% per
-     row), y = 32 + 64*row. -->
+<!-- Thin wavy branch line, oldest at the bottom right, newest at the top
+     left. Rows are 64px (y = 32 + 64*row). The SVG spans --x0 … --x0+--span
+     (see .path in the SCSS) and each stop sits at --f of that span, so the
+     bottom label ends as far from the right edge as the top dot is from the
+     left. Adding a stop means new --f values and a new SVG path. -->
 <div class="path" markdown="0">
   <svg class="path-line" viewBox="0 0 100 256" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M62 246 V224 C62 192 43.33 192 43.33 160 C43.33 128 24.67 128 24.67 96 C24.67 64 6 64 6 32 V10" />
+    <path d="M100 246 V224 C100 192 66.67 192 66.67 160 C66.67 128 33.33 128 33.33 96 C33.33 64 0 64 0 32 V10" />
   </svg>
   <ol class="path-stops">
-    <li class="path-now" style="--x: 6%">
+    <li class="path-now" style="--f: 0">
       <span class="path-dot"></span>
       <div class="path-info"><span class="path-date">2026.09&nbsp;– now</span><strong>Protein Generation</strong></div>
     </li>
-    <li style="--x: 24.67%">
+    <li style="--f: 0.3333">
       <span class="path-dot"></span>
       <div class="path-info"><span class="path-date">2026.08</span><strong>Protein Structure Prediction</strong></div>
     </li>
-    <li style="--x: 43.33%">
+    <li style="--f: 0.6667">
       <span class="path-dot"></span>
       <div class="path-info"><span class="path-date">2026.06</span><strong>Generative Models</strong></div>
     </li>
-    <li style="--x: 62%">
+    <li style="--f: 1">
       <span class="path-dot"></span>
       <div class="path-info"><span class="path-date">2026.03</span><strong>Drug–Target Affinity &amp; GNNs</strong></div>
     </li>
