@@ -227,7 +227,7 @@ kbd {
 .stop-current .stop-dot {
   border-color: #222;
   background: var(--metro-yellow);
-  animation: metro-glow 1.6s ease-in-out infinite;
+  animation: metro-glow 3s ease-in-out infinite;
 }
 
 .stop-current .stop-dot::before,
@@ -237,11 +237,11 @@ kbd {
   inset: -6px;
   border-radius: 50%;
   border: 4px solid var(--metro-yellow);
-  animation: metro-pulse 1.6s ease-out infinite;
+  animation: metro-pulse 3s ease-out infinite;
 }
 
 .stop-current .stop-dot::after {
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
 }
 
 @keyframes metro-pulse {
