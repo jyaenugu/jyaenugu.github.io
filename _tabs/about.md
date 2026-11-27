@@ -54,7 +54,7 @@ order: 1
       <span class="stop-dot"></span>
       <div class="stop-info">
         <span class="stop-date">2024.03&nbsp;– 2025.02</span>
-        <span>Wrote a<br>hip-hop album</span>
+        <span>Completed a<br>first EP</span>
         <span>[누의공과]</span>
       </div>
     </li>
